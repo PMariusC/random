@@ -1,10 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "xx@xxxxx.com";
-$password = "xxxxxx";
-$dbname = "parfyapp";
+require_once 'config.php';
 
-$con = mysqli_connect($servername, $username, $password, $dbname);
+$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if ( mysqli_connect_errno() ) {
 	exit('Herror connect sequel: ' . mysqli_connect_error());
 }

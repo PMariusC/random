@@ -17,16 +17,13 @@
 </html>
 
 <?php 
+require_once 'config.php';
+
 //TO Do auth only for admin
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$servername = "localhost";
-$username = "xx@xx.com";
-$password = "xxxxxx";
-$dbname = "parfyapp";
-
-$con = mysqli_connect($servername, $username, $password, $dbname);
+$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if ( mysqli_connect_errno() ) {
 	exit('Herror connect sequel: ' . mysqli_connect_error());
 }
