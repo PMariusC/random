@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
+$actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 session_start();
 
 $con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
@@ -21,16 +22,19 @@ if ($stmt = $con->prepare('SELECT name, pass FROM par_users WHERE user = ?')) {
 		if (password_verify($_POST['password'], $password)) {
 			$_SESSION['loggedintoParfyApp'] = true;
     		$_SESSION['username'] = $id;
-
-			$actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
   			$redi_link = str_replace('auth', 'hamburger', $actual_link);
   			header("Location:".$redi_link);
 		} else {
-		echo 'Incorrect username and/or password!';
+			$redi_link = str_replace('auth', 'index', $actual_link);
+			header("Location:".$redi_link."?error=wrong");
 		}
+	} else {
+		$redi_link = str_replace('auth', 'index', $actual_link);
+		header("Location:".$redi_link."?error=wrong");
 	}
 	$stmt->close();
 } else {
-	echo 'Incorrect username and/or password!';
+	$redi_link = str_replace('auth', 'index', $actual_link);
+	header("Location:".$redi_link."?error=wrong");
 }
 ?>

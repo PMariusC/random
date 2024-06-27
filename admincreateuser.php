@@ -41,6 +41,7 @@ $emailErr = $nameErr = $passErr = "";
 		return $data;
 	}
 	function set_usepass($datpas) {
+		//PASSWORD_DEFAULT or PASSWORD_BCRYPT or PASSWORD_ARGON2I
 		$pass = password_hash($datpas, PASSWORD_DEFAULT);
 		return $pass;
 	}

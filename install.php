@@ -18,10 +18,10 @@ try {
   $conn->exec($sql);
   $sql = "use parfyapp";
   $conn->exec($sql);
-  $sql = "CREATE TABLE IF NOT EXISTS `parfyapp`.`par_prods` ( `id` INT NOT NULL AUTO_INCREMENT , `cod_intern` INT NOT 	NULL , `cod_supplier` INT NOT NULL , `price` DECIMAL NOT NULL , `price_supplier` DECIMAL NOT NULL , `qty` INT 	NOT NULL , `id_warhouse` INT NOT NULL , PRIMARY KEY (`id`),UNIQUE KEY (`cod_intern`)) ENGINE = InnoDB;
-  		CREATE TABLE `parfyapp`.`par_prods_extra` ( `id` INT NOT NULL AUTO_INCREMENT , `id_prod` INT NOT NULL , `name` varchar(255) NOT NULL, `link` varchar(255) NOT NULL , `img_link` varchar(255) NOT NULL , `notes` varchar(255) NOT NULL , `EAN` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
-  		CREATE TABLE `parfyapp`.`par_warehouse` ( `id` INT NOT NULL AUTO_INCREMENT , `id_warehouse` INT NOT NULL , `name` varchar(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; 
-  		CREATE TABLE `parfyapp`.`par_users` ( `id` INT NOT NULL AUTO_INCREMENT , `user` varchar(255) NOT NULL , `name` varchar(255) NOT NULL , `pass` varchar(255) NOT NULL , `role` varchar(255) NOT NULL ,PRIMARY KEY (`id`), UNIQUE (`user`)) ENGINE = InnoDB; 
+  $sql = "CREATE TABLE IF NOT EXISTS `parfyapp`.`par_prods` ( `id` int(10) NOT NULL AUTO_INCREMENT , `id_prod` int(10) NOT NULL , `cod_intern` varchar(13) NOT 	NULL , `cod_supplier` varchar(13) NOT NULL , `price` decimal(20,6) NOT NULL , `price_supplier` decimal(20,6) NOT NULL , `qty` int(10) 	NOT NULL , `id_warhouse` int(10) NOT NULL , PRIMARY KEY (`id`),UNIQUE KEY (`cod_intern`)) ENGINE = InnoDB;
+  		CREATE TABLE `parfyapp`.`par_prods_extra` ( `id` int(10) NOT NULL AUTO_INCREMENT , `id_prod` int(10) NOT NULL , `name` varchar(255) NOT NULL, `link` varchar(255) NOT NULL , `img_link` varchar(255) NOT NULL , `notes` varchar(255) NOT NULL , `EAN` varchar(13)  NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+  		CREATE TABLE `parfyapp`.`par_warehouse` ( `id` int(10) NOT NULL AUTO_INCREMENT , `id_warehouse` int(10) NOT NULL , `name` varchar(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; 
+  		CREATE TABLE `parfyapp`.`par_users` ( `id` int(10) NOT NULL AUTO_INCREMENT , `user` varchar(255) NOT NULL , `name` varchar(255) NOT NULL , `pass` varchar(255) NOT NULL , `role` varchar(255) NOT NULL ,PRIMARY KEY (`id`), UNIQUE (`user`)) ENGINE = InnoDB; 
   		";
   $conn->exec($sql);
   	$actual_link = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
