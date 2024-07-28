@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-
+{% load static %}
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-
     <title>{% block title %}Parfumes{% endblock title %}</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" media="screen,projection" href="{% static 'css/cssmap-romania.css' %}" />
 </head>
-
 <body class="container">
+{% block page_content %}
 
-{% block page_content %}{% endblock page_content %}
-
+{% endblock page_content %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="{% static 'js/jquery.cssmap.js' %}"></script>
+    <script src="{% static 'js/mapscript.js' %}"></script>
 </body>
 </html>
