@@ -1,0 +1,315 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+@media (max-width: 1200px) {
+    .detail-box2 {
+        max-height: 350px;
+    }
+    .container_footer {
+        max-width:100%;
+    }
+    .menu_text li {
+        padding-right: 15px;   
+    }
+    .custom_menu-container .container {
+        max-width: 98%;
+    }
+    .custom_menu-container .custom_menu .navbar-nav .nav-link {
+        padding: 15px 15px;
+    }
+}
+@media (max-width: 1120px) {
+    .contact_section .col-lg-4.offset-lg-2.col-md-5.offset-md-1 {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .totaly_text {
+        font-size:1.5rem;
+    }
+    .menu_text li {
+        padding-right: 15px;
+    }
+    .custom_menu-container .custom_menu .navbar-nav .nav-link {
+        padding: 15px 15px;
+    }
+    .container {
+        max-width: 1100px;   
+    }
+    .detail-box2 {
+        max-height: 400px;
+        margin-top: 40px;
+    }
+    .custom_menu-container .custom_menu .user_option {
+        display:none;   
+    }
+    .contact_product {
+        padding-left: 50px;  
+        padding-top: 25px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+}
+@media (max-width: 991px) {
+    .custom_menu-container {
+        display:none;
+    }
+    .header_section .call_btn {
+        display: none;
+    }
+    .slider_section {
+        margin: 0;
+    }
+    .client_section .client_container {
+        flex-direction: row;
+    }
+    .client_section .client_box.b-2 {
+        margin-top: 0;
+    }
+    .info_section .col-lg-3 {
+        margin: 25px auto;
+        text-align: center;
+    }
+    .info_links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_contact>div {
+        justify-content: center;
+    }
+    .info_social .social_container {
+        justify-content: center;
+    }
+    .hero_area {
+        margin-bottom: -90px;
+        padding-top: 50px;
+    }
+    .logomobile {
+        display:block;
+    }
+    .header_section .container-fluid {
+        background-color:#101334;
+        position:fixed;
+    }
+    .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+        background-image: url(../images/menu-alb.png);
+    }
+    .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+        color:#ffffff;
+        text-transform: uppercase;
+    }
+    .custom_nav-container .user_option .login_btn-container a {
+        color:#ffffff;
+    }
+    .menu-item-has-children:hover .sub-menu {
+        display: none;
+    }
+    .slider_section .detail-box h1 {
+        font-size: 2rem;   
+    }
+    .slider_section .detail-box a {
+        padding: 10px 25px;   
+    }
+    .respodo-md {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .choose_section_2 {
+         width: 49%;
+        display: inline-block;
+    }
+     .detail-box2 {
+        max-height: 410px;
+        margin-top: 45px;
+    }
+    .contact_taital {
+        padding-left: 10px;
+        padding-right: 10px;   
+    }
+    .contact_section_3 .map_location {
+        display:none;   
+    }
+    .contact_product .menu.multi_column_menu li {
+        width: 100%;   
+    }
+    .menu-footer-doi-container .nav-link {
+        padding: 0.2rem 0.5rem;   
+    }
+    .menu_text {
+        width: 25%;
+    }
+    .footer_section p {
+        width: 100%;
+        padding:0;
+    }
+    .menu-item-has-children .sub-menu {
+        position:relative;
+        border-top: 1px dashed #fff;
+        border-bottom: 1px dashed #fff;
+    }
+    .menu-item-has-children .sub-menu>li>a {
+        text-transform:capitalize!important;
+    }
+    .custom_heading-container h2 {
+        font-size:1.6rem;   
+    }
+    .custom_heading-container h2::before {
+        bottom:-6px;
+    }
+    .send_btn {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom_menu-container {
+        display:none;
+    }
+    .hero_area {
+        height: auto;
+    }
+
+    .slider_section {
+        padding: 75px 0;
+    }
+
+    .client_section .carousel-control-prev,
+    .client_section .carousel-control-next {
+        display: none;
+    }
+
+    .contact_section form {
+        padding: 0;
+    }
+
+    .contact_section button {
+        margin: auto;
+    }
+
+
+    .footer_section p {
+        width: 100%;
+    }
+
+    .client_section .client_box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider_section .img-box {
+        margin-top: 25px;
+    }
+    .container-bf {
+        width:100%;
+        padding:0 20px
+    }
+    .slider_section .img-box img {
+        width: 130%;
+        margin-left: -40%;   
+    }
+     .choose_section_2 {
+        width:100%;
+        padding: 0 7%;
+    }
+    .layout_padding-bottom {
+        padding-bottom: 25px;   
+    }
+    .input_main {
+        width:100%;   
+    }
+    .send_btn {
+        width: 40%;
+    }
+    .img-box2 {
+        display:block;
+        margin: 0 auto;
+        padding: 0 3% 15px;
+        max-width: 100%;
+        height:50vh;
+    }
+    .contact_section_3 .map_main {
+        color:#000000;
+        margin-bottom: 10px;
+    }
+    .contact_product {
+       padding-left: 0;
+    }
+    .menu_text {
+        width:35%;   
+    }
+    .slider_section .carousel-control-prev, .slider_section .carousel-control-next {
+        width: 25px;
+        height: 25px;  
+        top:77%;
+    }
+    .slider_section {
+        padding:25px 0;     
+    }
+}
+
+@media (max-width: 576px) {
+
+    .slider_section .carousel-control-prev,
+    .slider_section .carousel-control-next {
+        display: none;
+    }
+
+    .skill_section .custom_heading-container {
+        justify-content: center;
+    }
+
+    .slider_section {
+        padding: 45px 0;
+    }
+
+    .portfolio_section .box {
+        margin-bottom: 20px;
+    }
+    .menu_text {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .floatright {
+        width:50%;   
+    }
+    .menu_text {
+        width: 50%;
+    }
+    .contact_section_3 .web {
+        padding-top: 10px;
+        padding-bottom: 10px;   
+    }
+}
+
+@media (max-width: 420px) {
+    .email-bt {
+        height: 40px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .massage-bt {
+        height: 100px;
+        font-size: 16px;
+        padding: 10px;   
+    }
+    .send_btn {
+        width: 100%;   
+    }
+    .main_btdos {
+        width: 100%;   
+    }
+    .menu_text {
+        width: 60%;
+    }
+}
+
+@media (max-width: 360px) {}
+
